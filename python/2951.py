@@ -15,4 +15,3 @@ if amizade>= g:
 else:
     print(amizade)
     print('My precioooous')
-    
