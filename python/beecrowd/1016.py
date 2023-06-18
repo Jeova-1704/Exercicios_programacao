@@ -1,6 +1,4 @@
-distanciaKm = input() 
-
-distanciaKm = int(distanciaKm)
+distanciaKm = int(input())
 minutos = (60 * distanciaKm) / 30
 
-print("{:.0f} minutos".format(minutos))
+print(f'{minutos:.0f} minutos')

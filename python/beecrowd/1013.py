@@ -11,4 +11,4 @@ C = int(C)
 if C > maior:
     maior = C
 
-print("{} eh o maior".format(maior))
+print(f'{maior} eh o maior')

@@ -1,13 +1,10 @@
-idade_dias = input()
+dias_idade = int(input())
 
-idade_dias = int(idade_dias)
-anos = idade_dias // 365
-idade_dias = idade_dias % 365
-
-meses = idade_dias // 30 
-idade_dias = idade_dias % 30
-
-dias = idade_dias
+anos = dias_idade // 365
+resto = dias_idade % 365
+meses = resto // 30
+resto = resto % 30
+dias = resto
 
 print(f'{anos} ano(s)')
 print(f'{meses} mes(es)')

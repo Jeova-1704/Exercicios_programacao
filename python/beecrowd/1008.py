@@ -3,5 +3,5 @@ time = int(input())
 valor = float(input())
 salario = time * valor
 
-print("NUMBER = {}".format(num))
-print("SALARY = U$ {:.2f}".format(salario))
+print(f'NUMBER = {num}')
+print(f'SALARY = U$ {salario:.2f}')

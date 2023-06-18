@@ -1,12 +1,12 @@
-A, B, C = input().split()
+A, B, C = map(str,input().split())
 pi = 3.14159
 
 A = float(A)
 B = float(B)
 C = float(C)
 
-print("TRIANGULO: {:.3f}".format((A * C) / 2))
-print("CIRCULO: {:.3f}".format(pi * (C**2 )))
-print("TRAPEZIO: {:.3f}".format(((A + B) * C ) / 2))
-print("QUADRADO: {:.3f}".format( B * B))
-print("RETANGULO: {:.3f}".format( A * B ))
+print(f'TRIANGULO: {(A * C) / 2:.3f}')
+print(f'CIRCULO: {pi * (C**2 ):.3f}')
+print(f'TRAPEZIO: {((A + B) * C ) / 2:.3f}')
+print(f'QUADRADO: {B * B:.3f}')
+print(f'RETANGULO: { A * B :.3f}')

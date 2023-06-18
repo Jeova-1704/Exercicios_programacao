@@ -1,32 +1,14 @@
-valor = input()
+valor = int(input())
 
-valor = int(valor)
 print(valor)
-cem = valor // 100
-valor = valor % 100
-print("{} nota(s) de R$ 100,00".format(cem))
 
-cinquenta = valor // 50
-valor = valor % 50
-print("{} nota(s) de R$ 50,00".format(cinquenta))
+notas = [100, 50, 20, 10, 5, 2, 1]
+quantidades = []
 
-vinte = valor // 20
-valor = valor % 20
-print("{} nota(s) de R$ 20,00".format(vinte))
+for nota in notas:
+    quantidade = valor // nota
+    quantidades.append(quantidade)
+    valor = valor % nota
 
-dez = valor // 10
-valor = valor % 10
-print("{} nota(s) de R$ 10,00".format(dez))
-
-cinco = valor // 5
-valor = valor % 5
-print("{} nota(s) de R$ 5,00".format(cinco))
-
-dois = valor // 2
-valor = valor % 2
-print("{} nota(s) de R$ 2,00".format(dois))
-
-um = valor // 1
-valor = valor % 1
-print("{} nota(s) de R$ 1,00".format(um))
-
+for i in range(len(notas)):
+    print(f'{quantidades[i]} nota(s) de R$ {notas[i]:.2f}'.replace('.', ','))

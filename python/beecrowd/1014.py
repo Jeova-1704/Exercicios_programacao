@@ -1,8 +1,4 @@
-x = input()
-y = input()
-
-x = int(x)
-y = float(y)
+x = float(input())
+y = float(input())
 consumoMedio = x/y
-
-print("{:.3f} km/l".format(consumoMedio))
+print(f'{consumoMedio:.3f} km/l')

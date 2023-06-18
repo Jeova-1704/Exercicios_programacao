@@ -1,10 +1,8 @@
-N = input()
+tempo = int(input())
 
-N = int(N)
-horas = N // 3600
-resto = N % 3600
+horas = tempo // 3600
+resto = tempo % 3600
 minutos = resto // 60
-resto = resto % 60
-segundos = resto
+segundos = resto % 60
 
 print(f'{horas}:{minutos}:{segundos}')

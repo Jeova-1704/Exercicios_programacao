@@ -1,9 +1,6 @@
-tempo = input()
-velocidade = input()
-
-tempo = int(tempo)
-velocidade = int(velocidade)
-distancia = velocidade * tempo
+tempo = int(input())
+velocidadeMedia = int(input())
+distancia = velocidadeMedia * tempo
 litros = distancia / 12
 
-print("{:.3f}".format(litros))
+print(f'{litros:.3f}')
