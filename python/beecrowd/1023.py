@@ -182,37 +182,37 @@
 
 
 
-# cidade = 1
+cidade = 1
 
-# while True:
-#     casos = int(input())
-#     if casos == 0:
-#         break
+while True:
+    casos = int(input())
+    if casos == 0:
+        break
     
-#     consumo = {}
-#     consumo_total = 0
-#     total_residentes = 0
+    consumo = {}
+    consumo_total = 0
+    total_residentes = 0
     
-#     for _ in range(casos):
-#         residentes, valor_consumo = map(int, input().split())
+    for _ in range(casos):
+        residentes, valor_consumo = map(int, input().split())
         
-#         chave = valor_consumo // residentes
-#         if chave in consumo:
-#             consumo[chave] += residentes
-#         else:
-#             consumo[chave] = residentes
-#         consumo_total += valor_consumo
-#         total_residentes += residentes
+        chave = valor_consumo // residentes
+        if chave in consumo:
+            consumo[chave] += residentes
+        else:
+            consumo[chave] = residentes
+        consumo_total += valor_consumo
+        total_residentes += residentes
     
-#     print(f"Cidade# {cidade}:")
+    print(f"Cidade# {cidade}:")
     
-#     for consumo_pessoa, residentes in sorted(consumo.items()):
-#         print(f"{residentes}-{consumo_pessoa}", end=" ")
+    for consumo_pessoa, residentes in sorted(consumo.items()):
+        print(f"{residentes}-{consumo_pessoa}", end=" ")
     
-#     media = consumo_total / total_residentes
-#     print("\nConsumo medio: {:.2f} m3.".format(media))
-#     print()
-#     cidade += 1
+    media = consumo_total / total_residentes
+    print("\nConsumo medio: {:.2f} m3.".format(media))
+    print()
+    cidade += 1
 
 
 
@@ -262,42 +262,6 @@
 #     print()
 #     cidade += 1
 
-
-
-
-
-
-# def main():
-#     from sys import stdin, stdout
-#     from collections import defaultdict
-#     from operator import itemgetter
-#     from math import floor
-
-#     def truncate(f):
-#         return floor(f * 100) / 100
-
-#     cidade = 1
-#     casos = int(stdin.readline())
-#     while True:
-#         consumptions = defaultdict(int)
-#         total_consumption = total_residents = 0
-#         for _ in range(casos):
-#             x, y = map(int, stdin.readline().split())
-#             consumptions[y // x] += x
-#             total_consumption += y
-#             total_residents += x
-
-#         stdout.write(f'Cidade# {cidade}:\n')
-#         stdout.write(' '.join(f'{c[1]}-{c[0]}' for c in sorted(consumptions.items(), key=itemgetter(0))))
-#         stdout.write(f'\nConsumo medio: {truncate(total_consumption / total_residents):.2f} m3.\n')
-
-#         casos = int(stdin.readline())
-#         if casos == 0:
-#             break
-#         stdout.write('\n')
-#         cidade += 1
-
-# main()
 
 
 
