@@ -1,12 +1,14 @@
-x = input().split()
-a, b = x
-if a == '1':
-    print('Total: R$ {:.2f}'.format(4.00*float(b)))
-if a == '2':
-    print('Total: R$ {:.2f}'.format(4.50*float(b)))
-if a == '3':
-    print('Total: R$ {:.2f}'.format(5.00*float(b)))
-if a == '4':
-    print('Total: R$ {:.2f}'.format(2.00*float(b)))
-if a == '5':
- print('Total: R$ {:.2f}'.format(1.50*float(b)))
+produtos = {
+    1: 4.00,
+    2: 4.50,
+    3: 5.00,
+    4: 2.00,
+    5: 1.50,
+}
+prod, quant = map(int, input().split())
+valor = 0
+
+for k, v in produtos.items():
+    if k == prod:
+        valor = quant * v
+print(f"Total: R$ {valor:.2f}")

@@ -1,11 +1,11 @@
-quantidadePositivos = 0
-somaPares = 0
-for c in range(6):
-    c = float(input())
-    if c >= 0:
-        somaPares += c
-        quantidadePositivos += 1
+qtd_positivos = soma__positivos = 0
+for _ in range(6):
+    x = float(input())
+    if x > 0:
+        qtd_positivos += 1
+        soma__positivos += x
 
-media = somaPares / quantidadePositivos
-print(f'{quantidadePositivos} valores positivos')
+media = soma__positivos / qtd_positivos
+print(f'{qtd_positivos} valores positivos')
 print(f'{media:.1f}')
+

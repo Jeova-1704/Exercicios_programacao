@@ -1,15 +1,11 @@
+soma = 0
 x = int(input())
 y = int(input())
-soma = 0
 
 if x > y:
-    maior = x
-    menor = y   
-else: 
-    menor = x
-    maior = y
+    x, y = y, x
 
-for num in range(menor + 1, maior):
+for num in range(x+1, y):
     if num % 2 != 0:
         soma += num
 

@@ -1,21 +1,24 @@
-notas = input().split()
-n1, n2, n3, n4 = float(notas[0]), float(notas[1]), float(notas[2]), float(notas[3])
+n1, n2, n3, n4 = map(float, input().split())
+p1, p2, p3, p4 = [2, 3, 4, 1]
+media = ((n1 * p1)+(n2 * p2)+(n3 * p3)+(n4 * p4))/(p1+p2+p3+p4)
 
-media = (n1*2 + n2*3 + n3*4 + n4*1) / 10
-
-print("Media: {:.1f}".format(media))
+print(f'Media: {media:.1f}')
 
 if media >= 7.0:
-    print("Aluno aprovado.")
+    print('Aluno aprovado.')
+
 elif media < 5.0:
-    print("Aluno reprovado.")
+    print('Aluno reprovado.')
+
 else:
-    print("Aluno em exame.")
-    exame = float(input())
-    print("Nota do exame: {:.1f}".format(exame))
-    nova_media = (media + exame) / 2
+    print('Aluno em exame.')
+    nota = float(input())
+    print(f'Nota do exame: {nota:.1f}')
+    nova_media = (media + nota) / 2
     if nova_media >= 5.0:
-        print("Aluno aprovado.")
+        print('Aluno aprovado.')
+        print(f'Media final: {nova_media}')
     else:
-        print("Aluno reprovado.")
-    print("Media final: {:.1f}".format(nova_media))
+        print('Aluno reprovado.')
+        print(f'Media final: {nova_media}')
+

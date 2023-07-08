@@ -1,4 +1,3 @@
-# 1046 Tempo de Jogo
 inicio, fim = map(int, input().split())
 
 tempo = fim-inicio

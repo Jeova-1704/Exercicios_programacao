@@ -1,33 +1,30 @@
-salario = input()
+salario = float(input())
 
-salario = float(salario)
+if salario <= 400:
+    novo_salario = salario + (salario * (15/100))
+    rajuste = novo_salario - salario
+    percentual = 15
 
-if 0 < salario <= 400.00:
-    novoSalario = salario + (salario * (15/100))
-    print(f'Novo salarario: {novoSalario:.2f}')
-    print(f'Reajuste ganho {novoSalario - salario:.2f}')
-    print('Em percentual: 15%')
-    
-elif 400.01 <= salario <= 800.00:
-    novoSalario = salario + (salario * (12/100))    
-    print(f'Novo salarario: {novoSalario:.2f}')
-    print(f'Reajuste ganho {novoSalario - salario:.2f}')
-    print('Em percentual: 12%')
+elif 400 < salario <= 800:
+    novo_salario = salario + (salario * (12/100))
+    rajuste = novo_salario - salario
+    percentual = 12
 
-elif 800.01 <= salario <= 1200.00:
-    novoSalario = salario + (salario * (10/100))
-    print(f'Novo salarario: {novoSalario:.2f}')
-    print(f'Reajuste ganho {novoSalario - salario:.2f}')
-    print('Em percentual: 10%')
+elif 800 < salario <= 1200:
+    novo_salario = salario + (salario * (10/100))
+    rajuste = novo_salario - salario
+    percentual = 10
 
-elif 1200.01 <= salario <= 2000.00:
-    novoSalario = salario + (salario * (7/100))    
-    print(f'Novo salarario: {novoSalario:.2f}')
-    print(f'Reajuste ganho {novoSalario - salario:.2f}')
-    print('Em percentual: 7%')
+elif 1200 < salario <= 2000:
+    novo_salario = salario + (salario * (7/100))
+    rajuste = novo_salario - salario
+    percentual = 7
 
-else:
-    novoSalario = salario + (salario * (4/100))    
-    print(f'Novo salarario: {novoSalario:.2f}')
-    print(f'Reajuste ganho {novoSalario - salario:.2f}')
-    print('Em percentual: 4%')
+elif salario > 2000:
+    novo_salario = salario + (salario * (4/100))
+    rajuste = novo_salario - salario
+    percentual = 4
+
+print(f'Novo salario: {novo_salario:.2f}')
+print(f'Reajuste ganho: {rajuste:.2f}')
+print(f'Em percentual: {percentual} %')

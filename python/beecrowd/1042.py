@@ -1,20 +1,10 @@
-todos = []
-ordenados = []
+n1, n2, n3 = map(int, input().split())
+numeros = [n1, n2, n3]
+ordenados = [n1, n2, n3]
 
-x, y, z = map(int, input().split())
-todos.append(x)
-todos.append(y)
-todos.append(z)
-ordenados.append(x)
-ordenados.append(y)
-ordenados.append(z)
-ordenados.sort()
-
-
-for i in ordenados:
-    print(i)
-
+numeros.sort()
+for num in numeros:
+    print(num)
 print()
-
-for i in todos:
-    print(i)
+for num in ordenados:
+    print(num)
